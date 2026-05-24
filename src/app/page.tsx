@@ -11,6 +11,7 @@ import { Work } from "@/components/sections/Work";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
+import { CinematicFooter } from "@/components/ui/motion-footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <FAQ />
         <CTA />
       </main>
+      <CinematicFooter />
       <ConnectModal />
     </ConnectModalProvider>
   );
