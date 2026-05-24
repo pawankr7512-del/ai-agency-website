@@ -131,7 +131,6 @@ export default function PricingSection4() {
     >
       <TimelineContent
         animationNum={4}
-        timelineRef={pricingRef}
         customVariants={revealVariants}
         className="absolute top-0 h-96 w-screen overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] "
       >
@@ -145,7 +144,6 @@ export default function PricingSection4() {
       </TimelineContent>
       <TimelineContent
         animationNum={5}
-        timelineRef={pricingRef}
         customVariants={revealVariants}
         className="absolute left-0 top-[-114px] w-full h-[113.625vh] flex flex-col items-start justify-start content-start flex-none flex-nowrap gap-2.5 overflow-hidden p-0 z-0"
       >
@@ -193,7 +191,6 @@ export default function PricingSection4() {
         <TimelineContent
           as="p"
           animationNum={0}
-          timelineRef={pricingRef}
           customVariants={revealVariants}
           className="text-gray-300"
         >
@@ -203,7 +200,6 @@ export default function PricingSection4() {
         <TimelineContent
           as="div"
           animationNum={1}
-          timelineRef={pricingRef}
           customVariants={revealVariants}
         >
           <PricingSwitch onSwitch={togglePricingPeriod} />
@@ -225,7 +221,6 @@ radial-gradient(circle at center, #206ce8 0%, transparent 70%)
             key={plan.name}
             as="div"
             animationNum={2 + index}
-            timelineRef={pricingRef}
             customVariants={revealVariants}
           >
             <Card
