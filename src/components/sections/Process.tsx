@@ -7,7 +7,7 @@ import { useConnectModal } from "@/context/ConnectModalContext";
 export function Process() {
   const { open } = useConnectModal();
   return (
-    <section id="process" className="border-y border-secondary/10 bg-black py-24">
+    <section id="process" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <SectionHeader label="Our Methodology" title="How we work" description="Ship fast, measure honestly, iterate to traction." align="center" className="mx-auto" />
         <ol className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
