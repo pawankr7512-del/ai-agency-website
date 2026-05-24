@@ -6,7 +6,6 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 export function WhyChoose() {
   return (
     <section id="why" className="relative bg-black py-24 sm:py-32">
-      <div className="section-divider mx-auto mb-20 max-w-7xl" />
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         <SectionHeader
           label="Why Choose Nexus AI"
