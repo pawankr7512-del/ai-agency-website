@@ -7,6 +7,7 @@ import { WhyChoose } from "@/components/sections/WhyChoose";
 import { Services } from "@/components/sections/Services";
 import { Process } from "@/components/sections/Process";
 import { Experience } from "@/components/sections/Experience";
+import Pricing from "@/components/ui/pricing-component";
 import { Work } from "@/components/sections/Work";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
@@ -23,6 +24,7 @@ export default function Home() {
         <Services />
         <Process />
         <Experience />
+        <Pricing />
         <Work />
         <Testimonials />
         <FAQ />
