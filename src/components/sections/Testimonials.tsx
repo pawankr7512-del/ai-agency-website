@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="border-y border-secondary/10 bg-black py-24">
+    <section id="testimonials" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <SectionHeader label="Testimonials" title="What our clients say" align="center" className="mx-auto" />
         <div className="mt-16 grid gap-5 sm:grid-cols-2">
