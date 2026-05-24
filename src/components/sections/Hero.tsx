@@ -3,7 +3,6 @@
 import { useConnectModal } from "@/context/ConnectModalContext";
 import { heroPills, site } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
-import { SplineScene } from "@/components/sections/SplineScene";
 
 export function Hero() {
   const { open } = useConnectModal();
@@ -76,14 +75,11 @@ export function Hero() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <div className="glass-card glow-purple relative min-h-[min(72vw,520px)] overflow-hidden rounded-3xl lg:min-h-[520px]">
+          <div className="glass-card glow-purple relative min-h-[min(72vw,520px)] overflow-hidden rounded-3xl lg:min-h-[520px] flex items-center justify-center">
             <div className="hero-spline-vignette pointer-events-none absolute inset-0 z-10" />
-            <div className="hero-spline-canvas relative h-full min-h-[min(72vw,420px)] lg:absolute lg:inset-0 lg:min-h-full">
-              <SplineScene className="h-full w-full" />
-            </div>
-            <div className="pointer-events-none absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              <span>Interactive 3D</span>
-              <span className="text-secondary">Powered by AI Automation</span>
+            <div className="relative z-20 text-center">
+              <p className="text-2xl font-bold text-white mb-2">AI-Powered Solutions</p>
+              <p className="text-gray-400">Building the future of automation</p>
             </div>
           </div>
         </div>
