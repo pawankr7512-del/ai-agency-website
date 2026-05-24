@@ -9,7 +9,6 @@ import { Process } from "@/components/sections/Process";
 import { Experience } from "@/components/sections/Experience";
 import { Work } from "@/components/sections/Work";
 import { Testimonials } from "@/components/sections/Testimonials";
-import PricingSection from "@/components/ui/pricing-section-4";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 import { CinematicFooter } from "@/components/ui/motion-footer";
@@ -26,7 +25,6 @@ export default function Home() {
         <Experience />
         <Work />
         <Testimonials />
-        <PricingSection />
         <FAQ />
         <CTA />
       </main>
