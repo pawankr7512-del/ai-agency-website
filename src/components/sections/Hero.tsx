@@ -3,6 +3,7 @@
 import { useConnectModal } from "@/context/ConnectModalContext";
 import { heroPills, site } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
+import Spline from '@splinetool/react-spline';
 
 export function Hero() {
   const { open } = useConnectModal();
@@ -75,9 +76,12 @@ export function Hero() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <div className="glass-card glow-purple relative min-h-[min(72vw,520px)] overflow-hidden rounded-3xl lg:min-h-[520px] flex items-center justify-center">
+          <div className="glass-card glow-purple relative min-h-[min(72vw,520px)] overflow-hidden rounded-3xl lg:min-h-[520px] flex items-center justify-center bg-black/40">
             <div className="hero-spline-vignette pointer-events-none absolute inset-0 z-10" />
-            <div className="relative z-20 text-center">
+            <div className="absolute inset-0 z-0">
+              <Spline scene="https://prod.spline.design/vhWIzCtB669NnOMK/scene.splinecode" />
+            </div>
+            <div className="relative z-20 text-center pointer-events-none">
               <p className="text-2xl font-bold text-white mb-2">AI-Powered Solutions</p>
               <p className="text-gray-400">Building the future of automation</p>
             </div>
@@ -94,7 +98,7 @@ export function Hero() {
   {[...heroPills, ...heroPills].map((pill, i) => (
     <span
       key={`${pill}-${i}`}
-      className="mx-4 shrink-0 rounded-full border border-secondary/30 bg-secondary/10 px-6 py-0 text-[18px] font-bold uppercase tracking-wider text-secondary min-h-[100px] flex items-center justify-center transition-all duration-300 hover:scale-105 hover:border-secondary hover:shadow-[0_0_30px_rgba(137,97,183,0.35)]"
+      className="mx-4 shrink-0 rounded-full border border-secondary/30 bg-secondary/10 px-6 py-0 text-[18px] font-bold uppercase tracking-wider text-secondary min-h-[100px] flex items-center justify-center"
     >
       {pill}
     </span>
