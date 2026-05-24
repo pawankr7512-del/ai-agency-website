@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 interface TimelineContentProps {
   children: React.ReactNode
   animationNum?: number
-  timelineRef?: React.RefObject<HTMLDivElement> | null
+  timelineRef?: any
   customVariants?: any
   as?: React.ElementType
   className?: string
